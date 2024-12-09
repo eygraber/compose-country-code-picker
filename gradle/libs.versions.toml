@@ -1,11 +1,11 @@
 [versions]
 agp = "8.7.3"
 
-android-sdk-compile = "34"
-android-sdk-target = "34"
+android-sdk-compile = "35"
+android-sdk-target = "35"
 android-sdk-min = "24"
 
-composeJetbrains = "1.7.1"
+composeJetbrains = "1.8.0-alpha01"
 
 conventions = "0.0.81"
 
@@ -38,3 +38,7 @@ detektEygraber-style = { module = "com.eygraber.detekt.rules:style", version.ref
 
 # not actually used; just here so renovate picks it up
 ktlint = { module = "com.pinterest.ktlint:ktlint-bom", version.ref = "ktlint" }
+
+locale = "com.vanniktech:multiplatform-locale:0.8.0"
+
+normalizer = "com.doist.x:normalize:1.1.1"

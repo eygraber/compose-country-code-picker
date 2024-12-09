@@ -53,8 +53,9 @@ gradleConventionsKmpDefaults {
   targets(
     KmpTarget.Android,
     KmpTarget.Ios,
-    KmpTarget.Js,
     KmpTarget.Jvm,
-    KmpTarget.WasmJs,
+    // Blocked by https://github.com/vanniktech/multiplatform-locale/pull/169
+    // Blocked by https://github.com/Doist/doistx-normalize/issues/84
+    // KmpTarget.WasmJs,
   )
 }

@@ -50,9 +50,9 @@ plugins {
   id("com.gradle.develocity") version "3.18.2"
 }
 
-rootProject.name = "template"
+rootProject.name = "compose-country-code-picker"
 
-include("template-module")
+include(":library")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 

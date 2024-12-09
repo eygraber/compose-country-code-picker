@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-  namespace = "com.eygraber.template"
+  namespace = "com.eygraber.compose.country.code.picker"
 }
 
 kotlin {
@@ -18,7 +18,11 @@ kotlin {
   sourceSets {
     commonMain {
       dependencies {
-        implementation(compose.runtime)
+        api(compose.material3)
+        api(compose.runtime)
+
+        api(libs.locale)
+        implementation(libs.normalizer)
       }
     }
 
