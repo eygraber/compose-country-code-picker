@@ -1,25 +1,55 @@
 {
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
-  "enabledManagers": ["gradle", "gradle-wrapper", "github-actions"],
-  "labels": ["dependencies"],
+  "enabledManagers": [
+    "gradle",
+    "gradle-wrapper",
+    "github-actions"
+  ],
+  "labels": [
+    "dependencies"
+  ],
   "prHourlyLimit": 3,
   "packageRules": [
     {
       "groupName": "gradle-conventions",
-      "matchPackagePrefixes": ["com.eygraber.conventions"],
-      "automerge": true
+      "automerge": true,
+      "matchPackageNames": [
+        "com.eygraber.conventions{/,}**"
+      ]
     },
     {
-      "matchDatasources": ["maven"],
+      "groupName": "gradle-develocity-plugin",
+      "automerge": true,
+      "registryUrls": [
+        "https://plugins.gradle.org/m2"
+      ],
+      "matchPackageNames": [
+        "com.gradle.develocity{/,}**"
+      ]
+    },
+    {
+      "groupName": "agp",
+      "automerge": true,
+      "registryUrls": [
+        "https://dl.google.com/dl/android/maven2/"
+      ],
+      "matchPackageNames": [
+        "com.android.tools{/,}**"
+      ]
+    },
+    {
+      "matchDatasources": [
+        "maven"
+      ],
       "depType": "dependencies",
+      "automerge": true,
       "registryUrls": [
         "https://repo.maven.apache.org/maven2/",
         "https://dl.google.com/dl/android/maven2/",
         "https://plugins.gradle.org/m2"
-      ],
-      "automerge": true
+      ]
     }
   ]
 }
