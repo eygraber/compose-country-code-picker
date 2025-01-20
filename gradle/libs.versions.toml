@@ -39,6 +39,6 @@ detektEygraber-style = { module = "com.eygraber.detekt.rules:style", version.ref
 # not actually used; just here so renovate picks it up
 ktlint = { module = "com.pinterest.ktlint:ktlint-bom", version.ref = "ktlint" }
 
-locale = "com.vanniktech:multiplatform-locale:0.8.0"
+locale = "com.vanniktech:multiplatform-locale:0.9.0"
 
 normalizer = "com.doist.x:normalize:1.1.1"
