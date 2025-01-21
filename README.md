@@ -43,7 +43,7 @@ repositories {
 }
 
 dependencies {
-  implementation("com.eygraber:compose-country-code-picker:0.5.0")
+  implementation("com.eygraber:compose-country-code-picker:0.5.1")
 }
 ```
 
