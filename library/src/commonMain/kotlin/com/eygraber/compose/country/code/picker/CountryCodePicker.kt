@@ -10,8 +10,6 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.text.input.TextFieldState
 import androidx.compose.foundation.text.input.rememberTextFieldState
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.ListItemColors
@@ -308,7 +306,7 @@ private fun DefaultSearchField(
   label: @Composable TextFieldLabelScope.() -> Unit = { Text("Search") },
   icon: @Composable () -> Unit = {
     Icon(
-      imageVector = Icons.Default.Search,
+      imageVector = SearchIcon,
       contentDescription = null,
     )
   },
