@@ -35,7 +35,7 @@ buildscript-publish = { module = "com.vanniktech:gradle-maven-publish-plugin", v
 
 # needed because material3 didn't get upgraded to stable with the rest of 1.8.0
 #noinspection GradleDependency
-compose-material3 = "org.jetbrains.compose.material3:material3:1.8.0-alpha03"
+compose-material3 = "org.jetbrains.compose.material3:material3:1.8.0"
 
 detektEygraber-formatting = { module = "com.eygraber.detekt.rules:formatting", version.ref = "detektEygraber" }
 detektEygraber-style = { module = "com.eygraber.detekt.rules:style", version.ref = "detektEygraber" }
