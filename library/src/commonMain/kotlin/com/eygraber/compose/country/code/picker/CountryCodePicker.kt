@@ -52,12 +52,13 @@ private val defaultSearch: (CharSequence, List<Country>) -> List<Country> = { se
       val displayName = country.displayName()
 
       val isDisplayNameMatch = displayName.contains(searchTerm, ignoreCase = true)
-      val isNormalizedNameMatch = isDisplayNameMatch || run {
-        val normalizedName = defaultSearchNormalizedNameCache.getOrPut(displayName) {
-          displayName.normalize(Form.NFD).replace(unicodeAccentsRegex, "")
+      val isNormalizedNameMatch = isDisplayNameMatch ||
+        run {
+          val normalizedName = defaultSearchNormalizedNameCache.getOrPut(displayName) {
+            displayName.normalize(Form.NFD).replace(unicodeAccentsRegex, "")
+          }
+          normalizedName.contains(searchTerm, ignoreCase = true)
         }
-        normalizedName.contains(searchTerm, ignoreCase = true)
-      }
 
       isDisplayNameMatch || isNormalizedNameMatch
     }
