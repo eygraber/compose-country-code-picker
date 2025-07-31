@@ -8,6 +8,7 @@ plugins {
 
 android {
   namespace = "com.eygraber.compose.country.code.picker"
+  testOptions.unitTests.isIncludeAndroidResources = false
 }
 
 kotlin {
