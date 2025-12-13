@@ -45,4 +45,4 @@ ktlint = { module = "com.pinterest.ktlint:ktlint-bom", version.ref = "ktlint" }
 
 locale = "com.vanniktech:multiplatform-locale:0.9.0"
 
-normalizer = "com.doist.x:normalize:1.2.0"
+normalizer = "com.doist.x:normalize:1.3.0"
