@@ -68,10 +68,10 @@ private val defaultSearch: (CharSequence, List<Country>) -> List<Country> = { se
 @Composable
 public fun CountryCodePicker(
   onClick: (Country) -> Unit,
-  modifier: Modifier = Modifier,
   searchLabel: AnnotatedString,
   searchIcon: ImageVector,
   searchIconContentDescription: String?,
+  modifier: Modifier = Modifier,
   countryItemLeadingContent: @Composable (Country) -> Unit = { country ->
     DefaultCountryItemLeadingContent(country)
   },
@@ -112,10 +112,10 @@ public fun CountryCodePicker(
 @Composable
 public fun CountryCodePicker(
   onClick: (Country) -> Unit,
-  modifier: Modifier = Modifier,
   searchLabel: String,
   searchIcon: ImageVector,
   searchIconContentDescription: String?,
+  modifier: Modifier = Modifier,
   countryItemLeadingContent: @Composable (Country) -> Unit = { country ->
     DefaultCountryItemLeadingContent(country)
   },
@@ -156,9 +156,9 @@ public fun CountryCodePicker(
 @Composable
 public fun CountryCodePicker(
   onClick: (Country) -> Unit,
-  modifier: Modifier = Modifier,
   searchLabel: @Composable TextFieldLabelScope.() -> Unit,
   searchIcon: @Composable () -> Unit,
+  modifier: Modifier = Modifier,
   countryItemLeadingContent: @Composable (Country) -> Unit = { country ->
     DefaultCountryItemLeadingContent(country)
   },
