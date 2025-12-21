@@ -15,9 +15,8 @@ kotlin {
   sourceSets {
     commonMain {
       dependencies {
-        // needed because material3 didn't get upgraded to stable with the rest of 1.8.0
         api(libs.compose.material3)
-        api(compose.runtime)
+        api(libs.compose.runtime)
 
         api(libs.locale)
         implementation(libs.normalizer)
