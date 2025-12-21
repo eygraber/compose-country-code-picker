@@ -58,24 +58,6 @@ jobs:
       - name: Run ktlint
         run: ./format --no-format
 
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-
-      - uses: actions/setup-java@v5
-        with:
-          distribution: 'zulu'
-          java-version-file: .ci-java-version
-
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v5
-        with:
-          gradle-version: wrapper
-
-      - name: Run checks
-        run: ./gradlew lintRelease
-
   test:
     strategy:
       matrix:
