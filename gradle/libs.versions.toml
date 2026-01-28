@@ -9,15 +9,15 @@ composeJetbrains = "1.10.0"
 
 conventions = "0.0.98"
 
-detekt = "2.0.0-alpha.1"
-detektCompose = "0.5.5"
-detektEygraber = "1.0.14"
+detekt = "2.0.0-alpha.2"
+detektCompose = "0.5.6"
 
 dokka = "2.1.0"
 
 kotlin = "2.3.0"
 
 ktlint = "1.8.0"
+ktlintCustomRules = "0.1.1"
 
 publish = "0.36.0"
 
@@ -38,11 +38,14 @@ compose-material3 = "org.jetbrains.compose.material3:material3:1.9.0"
 compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "composeJetbrains" }
 
 detektCompose = { module = "io.nlopez.compose.rules:detekt", version.ref = "detektCompose" }
-detektEygraber-formatting = { module = "com.eygraber.detekt.rules:formatting", version.ref = "detektEygraber" }
-detektEygraber-style = { module = "com.eygraber.detekt.rules:style", version.ref = "detektEygraber" }
 
 # not actually used; just here so renovate picks it up
+# noinspection UnusedVersionCatalogEntry
 ktlint = { module = "com.pinterest.ktlint:ktlint-bom", version.ref = "ktlint" }
+
+# just here so renovate picks it up
+# noinspection UnusedVersionCatalogEntry
+ktlintCustomRules = { module = "com.eygraber.ktlint.rules:ktlint-rules", version.ref = "ktlintCustomRules" }
 
 locale = "com.vanniktech:multiplatform-locale:0.9.0"
 
