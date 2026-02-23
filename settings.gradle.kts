@@ -40,7 +40,7 @@ dependencyResolutionManagement {
       includeMavenCentral = true,
       includeMavenCentralSnapshots = true,
       includeGoogle = true,
-      includeJetbrainsComposeDev = true,
+      includeJetbrainsComposeDev = false,
     )
   }
 }
