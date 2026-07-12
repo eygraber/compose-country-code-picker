@@ -2,7 +2,7 @@
 agp = "9.2.1"
 
 android-sdk-compile = "37"
-android-sdk-target = "35"
+android-sdk-target = "37"
 android-sdk-min = "24"
 
 composeJetbrains = "1.11.1"
